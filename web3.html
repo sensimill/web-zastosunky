@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спагетті Карбонара - Рецепт</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .recipe-card {
+            max-width: 400px;
+            margin: 0 auto;
+            background: linear-gradient(to bottom, #f5e6d3, #e8d5c4);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border: 1px solid #d4b896;
+        }
+        .recipe-card {
+      border: 3px solid #8B4513;
+        }
+
+        .recipe-card::before {
+          content: '';
+          position: absolute;
+          top: 8px;
+          left: 8px;
+          right: 8px;
+          bottom: 8px;
+          border: 2px solid #dac7a5;
+          border-radius: 12px;
+          pointer-events: none;
+        }
+
+        .recipe-card {
+          position: relative;
+        }
+
+        .recipe-header {
+            text-align: center;
+            padding: 20px 20px 10px 20px;
+            position: relative;
+        }
+        
+        .recipe-title {
+            font-size: 38px;
+            font-weight: bold;
+            color: #8B4513;
+            margin: 0;
+            letter-spacing: 1px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .recipe-image {
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .recipe-content {
+            display: flex;
+            padding: 0 15px;
+            gap: 10px;
+       
+        }
+        
+        .left-column {
+            flex: 0.8;
+        }
+        
+        .ingredients-section {
+            background: #f9f7f4;
+            border-radius: 10px;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #767351;
+        }
+        
+        .instructions-section {
+            flex: 1;
+            background: #f9f7f4;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: px;
+            display: flex;
+            flex-direction: column;
+             border: 1px solid #767351;
+        }
+        
+        .instructions-list {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          
+        }
+        
+        .prep-info {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .prep-item {
+            background: #f9f7f4;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #8B4513;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #8B4513;
+            margin-bottom: 10px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        .ingredients-list, .instructions-list {
+            font-size: 12px;
+            line-height: 1.4;
+            color: #333;
+            margin: 0;
+            padding-left: 15px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .ingredients-list li, .instructions-list li {
+            margin-bottom: 3px;
+        }
+        
+        .recipe-footer {
+            display: none;
+        }
+        
+        .footer-item {
+            flex: 1;
+        }
+        
+        .footer-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #8B4513;
+            margin-bottom: 5px;
+        }
+        
+        .footer-value {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="recipe-card">
+        <div class="recipe-header">
+            <h1 class="recipe-title">SPAGHETTI<br>CARBONARA</h1>
+            <div class="recipe-image">
+            <img src="spaghetti.jpeg" alt="Spaghetti Carbonara" >
+            </div>
+          </header>
+        </div>
+
+        
+        <div class="recipe-content">
+            <div class="left-column">
+                <div class="ingredients-section">
+                    <div class="section-title">Ingredients</div>
+                    <ul class="ingredients-list">
+                        <li>200g spaghetti</li>
+                        <li>100g pancetta</li>
+                        <li>2 large eggs</li>
+                        <li>50g  Parmesan</li>
+                        <li>2 garlic cloves</li>
+                        <li>Salt and pepper</li>
+                    </ul>
+                </div>
+                
+                <div class="prep-info">
+                    <div class="prep-item">
+                        <div class="footer-title">Preparation Time</div>
+                        <div class="footer-value">20 min</div>
+                    </div>
+                    <div class="prep-item">
+                        <div class="footer-title">Calories</div>
+                        <div class="footer-value">500 kcal</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="instructions-section">
+                <div class="section-title">Instructions</div>
+                <ol class="instructions-list">
+                    <li> Cook the spaghetti in salted boiling water until al dente.</li>
+                    <li> In a pan, cook the pancetta until crispy. Add the garlic and sauté briefly.</li>
+                    <li> Beat the eggs with grated Parmesan, salt and pepper.</li>
+                    <li> Drain spaghetti and mix with the pancetta and egg mixture.</li>
+                    <li> Serve immediately.</li>
+                </ol>
+            </div>
+        </div>
+        
+        <div style="padding: 15px;"></div>
+    </div>
+</body>
+</html>

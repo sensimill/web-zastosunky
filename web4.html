@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Орбіта Місяця на CSS3</title>
+    <style>
+         body {
+            margin: 0;
+            padding: 0;
+            
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .space {
+            position: relative;
+            width: 600px;
+            height: 600px;
+        }
+        
+        #earth {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150px;
+            z-index: 1;
+        }
+        
+        #moon {
+            position: absolute;
+            width: 50px;
+            z-index: 0;
+            animation: orbit 8s linear infinite;
+        }
+        
+        @keyframes orbit {
+            0% {
+                top: 50%;
+                left: 0;
+                transform: translate(-50%, -50%) rotate(0deg);
+                z-index: 2;
+                width: 40px;
+            }
+            25% {
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(90deg);
+                z-index: 2;
+                width: 50px;
+            }
+            50% {
+                top: 50%;
+                left: 100%;
+                transform: translate(-50%, -50%) rotate(180deg);
+                z-index: 0;
+                width: 40px;
+            }
+            75% {
+                top: 100%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(270deg);
+                z-index: 0;
+                width: 50px;
+            }
+            100% {
+                top: 50%;
+                left: 0;
+                transform: translate(-50%, -50%) rotate(360deg);
+                z-index: 2;
+                width: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://img.freepik.com/free-psd/earth-planet-transparent-background_84443-27083.jpg?semt=ais_hybrid&w=740" id="earth" alt="Земля" style="mix-blend-mode:multiply;">
+    <img src="https://w7.pngwing.com/pngs/634/670/png-transparent-full-moon-full-moon-moon-image-file-formats-atmosphere-computer-wallpaper-thumbnail.png" id="moon" alt="Місяць">
+</body>
+</html>
